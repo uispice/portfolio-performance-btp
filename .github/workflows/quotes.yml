@@ -10,7 +10,10 @@ permissions: write-all
 jobs:
   get-quotes:
     runs-on: ubuntu-latest
-
+    
+    environment:
+      name: github-pages
+      
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
